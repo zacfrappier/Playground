@@ -1,0 +1,115 @@
+.topNav{
+/* border-radius: 5px; */
+position: absolute;
+width: 1440px;
+height: 120px;
+left: 0px;
+top: 0px;
+background: #767474;
+border: #4a4949 solid 6px;
+}
+
+.logo{
+position: absolute;
+border-radius: 5px;
+width: 103px;
+height: 92px;
+left: 8px;
+top: 14px;
+background: #414141;
+}
+
+.btn{
+top: 28px;
+background: #414141;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 15px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+border-radius: 5px;
+width: 123px;
+height: 63px;
+}
+
+.h:hover{
+background-color: #6b6a6a;
+color: white; 
+cursor: pointer;
+border: #201f1f;
+}
+
+.btnAP{
+position: absolute;
+width: 123px;
+height: 63px;
+left: 125px;
+top: 29px;
+}
+
+.btnMP{
+position: absolute;
+width: 123px;
+height: 63px;
+left: 262px;
+top: 29px;
+}
+
+.btnCP{
+position: absolute;
+width: 123px;
+height: 63px;
+left: 399px;
+top: 29px;
+}
+
+.btnA{
+position: absolute;
+width: 123px;
+height: 63px;
+left: 536px;
+top: 29px;
+}
+
+.searchBar{
+position: relative;
+width: 400px;
+height: 92px;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 10px 15px;
+position: absolute;
+height: 48px;
+top: 35px;
+left: 670px;
+border: 1px solid #E2E1E5;
+border-radius: 5px;   
+}
+
+.btnSU{
+position: relative;
+width: 143px;
+height: 51px;
+top: 33px;
+left: 1090px;
+}
+
+.btnLI{
+position: relative;
+width: 143px;
+height: 51px;
+top: -18px;
+left: 1250px;
+}
+
+.form-control{
+    position: relative;
+    top: -23px;
+    padding: 2px;
+}

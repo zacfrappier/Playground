@@ -1,0 +1,38 @@
+.welcome{
+    background: #414141;
+    position: absolute;
+    width: 1451px;
+    height: 600px;
+    top: 130px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.createTitle{
+    background: #414141;
+    top: 400px;
+    width: 400 px;
+    height: 400 px;
+}
+
+.createForm{
+    background: #414141;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 100px;
+    left: 500px;
+    /* flex-wrap: wrap; */
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    border: white 5px solid;
+    border-radius: 5px;
+}
