@@ -1,3 +1,8 @@
-.createForm{
-    
+.createPromptMain{
+position: absolute;
+background: #929292;
+border: #4a4949 solid 10px;
+width: 1431px;
+height: 600px;
+top: 130px;
 }

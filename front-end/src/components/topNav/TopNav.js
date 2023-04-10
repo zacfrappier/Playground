@@ -11,7 +11,6 @@ function TopNav() {
         center: <Welcome />
       })
 
-//#region  buttons
       const onFormFieldChange = (event) => {
         const target = event.target;
         const newUserValue = target.value;
@@ -27,6 +26,7 @@ function TopNav() {
         // });
         console.log("end onChange");
       };
+//#region  buttons
 
       const allPromptsClicked = async (e) => {
         e.preventDefault();
