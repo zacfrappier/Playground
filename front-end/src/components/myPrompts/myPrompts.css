@@ -1,0 +1,84 @@
+.myNav{
+position: absolute;
+background: #929292;
+border: #4a4949 solid 10px;
+width: 1431px;
+height: 60px;
+top: 130px;
+}
+
+.dropDown{
+position: absolute;
+top: 10px;
+left: 50px;
+background: #414141;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 15px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+border-radius: 5px;
+width: 270px;
+height: 40px;
+}
+
+.btnAG{
+    position: absolute;
+    top: 10px;
+    left: 380px;
+    background: #414141;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 5px;
+    width: 90px;
+    height: 40px;
+}
+
+.btnEG{
+    position: absolute;
+    top: 10px;
+    left: 490px;
+    background: #414141;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 5px;
+    width: 90px;
+    height: 40px;
+}
+
+.btnPub{
+    position: absolute;
+    top: 10px;
+    left: 600px;
+    background: #414141;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 5px;
+    width: 90px;
+    height: 40px;
+}

@@ -1,0 +1,28 @@
+.cardBody{
+    background-color: #929292;
+    height: 400px;
+    width: 300px;
+    border: 6px solid white;
+    /* padding: 20px; */
+    margin: 20px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+.cardImg{
+    border: 3px solid white;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.cardTitle{
+    border: 3px solid white;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.cardUser{
+    border: 3px solid white;
+    margin: 10px;
+    border-radius: 5px;
+}

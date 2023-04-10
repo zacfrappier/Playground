@@ -1,0 +1,13 @@
+.welcome{
+    background: #414141;
+    position: absolute;
+    width: 1451px;
+    height: 600px;
+    top: 130px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
