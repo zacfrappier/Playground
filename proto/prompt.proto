@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package playground;
+
+message Prompt {
+  string title = 1;
+  string description = 2;
+  repeated Example examples = 3;
+
+  message Example {
+    string response = 1;
+  }
+}
