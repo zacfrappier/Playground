@@ -6,7 +6,6 @@ function App() {
   return (
     <Auth0Provider>
     <div>
-
       <TopNav />
     </div>
     </Auth0Provider>
