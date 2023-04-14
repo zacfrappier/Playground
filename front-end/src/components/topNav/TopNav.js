@@ -7,13 +7,13 @@ import CreatePrompt from "../createPrompt/CreatePrompt";
 import Welcome from "../welcome/Welcome";
 import { useAuth0 } from "@auth0/auth0-react";
 import LoginButton from "../auth0/LoginButton";
-import Logoutbutton from "../auth0/LogoutButton";
+import LogoutButton from "../auth0/LogoutButton";
 
 function TopNav() {
   const [main, setMain] = useState({
     center: <Welcome />,
   });
-  
+
   // const { user, isAuthenticated, isLoading } = useAuth0();
 
   // if (isLoading) {
@@ -122,12 +122,8 @@ function TopNav() {
         <button className="btn btnSU h" onClick={signUpClicked}>
           Sign up
         </button>
-        <div className="btn btnLI h" 
-        // onClick={logInClicked}
-        >
         <LoginButton />
-          Log in
-        </div>
+        <LogoutButton />
       </div>
       {main.center}
     </div>
