@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // MongoDB connection
 mongoose
   .connect(
-    "",
+    "mongodb+srv://promptplaygrounddb:Uk1jW8ztb1hhhDJB@cluster0.azzdgwl.mongodb.net/test1?retryWrites=true&w=majority",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
