@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import "./topNav.css";
 import AllPrompts from "../allPrompts/AllPrompts";
@@ -7,18 +7,23 @@ import CreatePrompt from "../createPrompt/CreatePrompt";
 import Welcome from "../welcome/Welcome";
 import { useAuth0 } from "@auth0/auth0-react";
 import LoginButton from "../auth0/LoginButton";
-import Logoutbutton from "../auth0/LogoutButton";
+import LogoutButton from "../auth0/LogoutButton";
+import service from "../../service/service";
 
 function TopNav() {
   const [main, setMain] = useState({
     center: <Welcome />,
   });
   
-  // const { user, isAuthenticated, isLoading } = useAuth0();
+  useEffect(() => {
+    service.getAllPrompts();
+  })
 
-  // if (isLoading) {
-  //   return <div>Loading ...</div>;
-  // }
+  const { user, isAuthenticated, isLoading } = useAuth0();
+
+  if (isLoading) {
+    return <div>Loading ...</div>;
+  }
 
   const onFormFieldChange = (event) => {
     const target = event.target;
@@ -122,12 +127,8 @@ function TopNav() {
         <button className="btn btnSU h" onClick={signUpClicked}>
           Sign up
         </button>
-        <div className="btn btnLI h" 
-        // onClick={logInClicked}
-        >
         <LoginButton />
-          Log in
-        </div>
+        <LogoutButton />
       </div>
       {main.center}
     </div>
