@@ -61,7 +61,9 @@ function CreatePrompt() {
             />
         </Form>
       </Formik>
-        <Dropzone onDrop={(acceptedFiles) => console.log(acceptedFiles)}>
+      {/* <h3>Add photo</h3> */}
+      <div className="dropZone">
+        <Dropzone className="dropZone" onDrop={(acceptedFiles) => console.log(acceptedFiles)}>
           {({ getRootProps, getInputProps }) => (
             <section>
               <div {...getRootProps()}>
@@ -71,6 +73,7 @@ function CreatePrompt() {
             </section>
           )}
         </Dropzone>
+      </div>
           </div>
     </div>
   );

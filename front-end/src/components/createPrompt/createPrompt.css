@@ -6,3 +6,10 @@ width: 1431px;
 height: 600px;
 top: 130px;
 }
+.dropZone{
+    border: white solid 4px;
+    /* padding: px;    */
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}

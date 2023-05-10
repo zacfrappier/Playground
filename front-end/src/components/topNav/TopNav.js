@@ -21,6 +21,13 @@ function TopNav() {
 
   const { user, isAuthenticated, isLoading } = useAuth0();
 
+  const {userInfo, setUserInfo}= useState("email");
+
+  const handleStateChange = (newValue) => {
+    console.log("log in button info : ", newValue)
+    setUserInfo(newValue);
+  };
+
   if (isLoading) {
     return <div>Loading ...</div>;
   }
@@ -127,7 +134,7 @@ function TopNav() {
         <button className="btn btnSU h" onClick={signUpClicked}>
           Sign up
         </button>
-        <LoginButton />
+        <LoginButton onStateChange={handleStateChange}/>
         <LogoutButton />
       </div>
       {main.center}
