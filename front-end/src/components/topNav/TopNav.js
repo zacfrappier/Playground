@@ -19,7 +19,10 @@ function TopNav() {
     service.getAllPrompts();
   })
 
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  const { user, isAuthenticated, isLoading, getAccessTokenSilently } = useAuth0();
+
+  console.log(user);
+  console.log(getAccessTokenSilently());
 
   const {userInfo, setUserInfo}= useState("email");
 
