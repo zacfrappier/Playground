@@ -3,7 +3,7 @@ import axios from "axios";
 const mongoURI = process.env.REACT_APP_MONGO_URI;
 
 const getAllPrompts = () => {
-  return axios.get(`${mongoURI}/tasks`);
+  // return axios.get(`${mongoURI}/tasks`);
 };
 
 //    ----------With success and error handlers---------------------
@@ -18,19 +18,19 @@ const getAllPrompts = () => {
 //   };
 
 const getPromptById = (id) => {
-  return axios.get(`${mongoURI}/tasks/${id}`);
+  // return axios.get(`${mongoURI}/tasks/${id}`);
 };
 
 const createPrompt = (data) => {
-  return axios.post(`${mongoURI}/tasks`, data);
+  // return axios.post(`${mongoURI}/tasks`, data);
 };
 
 const updatePrompt = (id, data) => {
-  return axios.put(`${mongoURI}/tasks/${id}`, data);
+  // return axios.put(`${mongoURI}/tasks/${id}`, data);
 };
 
 const deletePrompt = (id) => {
-  return axios.delete(`${mongoURI}/tasks/${id}`);
+  // return axios.delete(`${mongoURI}/tasks/${id}`);
 };
 
 export default {

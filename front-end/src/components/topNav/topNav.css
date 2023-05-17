@@ -19,7 +19,9 @@ top: 14px;
 background: #414141;
 }
 
-.btn{
+/* ORIGINAL BTN  CHANGE HOVER TOO*/
+
+/* .btn{
 top: 28px;
 background: #414141;
 font-family: 'Inter';
@@ -34,14 +36,41 @@ color: #FFFFFF;
 border-radius: 5px;
 width: 123px;
 height: 63px;
-}
+} */
 
-.h:hover{
+.btn{
+    top: 28px;
+    background: #767474;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 5px;
+    width: 123px;
+    height: 63px;
+    border: none;
+    }
+
+    /* ORIGINAL HOVER */
+
+/* .h:hover{
 background-color: #6b6a6a;
 color: white; 
 cursor: pointer;
 border: #201f1f;
-}
+} */
+
+.h:hover{
+    background-color: #767474;
+    color: #414141; 
+    cursor: pointer;
+    border: #201f1f;
+    }
 
 .btnAP{
 position: absolute;

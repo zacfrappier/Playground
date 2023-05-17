@@ -19,7 +19,17 @@ function TopNav() {
     service.getAllPrompts();
   })
 
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  const { user, isAuthenticated, isLoading, getAccessTokenSilently } = useAuth0();
+
+  console.log(user);
+  console.log(getAccessTokenSilently());
+
+  const {userInfo, setUserInfo}= useState("email");
+
+  const handleStateChange = (newValue) => {
+    console.log("log in button info : ", newValue)
+    setUserInfo(newValue);
+  };
 
   if (isLoading) {
     return <div>Loading ...</div>;
@@ -127,7 +137,7 @@ function TopNav() {
         <button className="btn btnSU h" onClick={signUpClicked}>
           Sign up
         </button>
-        <LoginButton />
+        <LoginButton onStateChange={handleStateChange}/>
         <LogoutButton />
       </div>
       {main.center}
