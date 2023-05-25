@@ -17,7 +17,7 @@ router.get("/secured", requiresAuth(), async (req, res) => {
   try {
     if (req.oidc.accessToken) {
       const { token_type, access_token } = req.oidc.accessToken;
-      const apiResponse = await axios.get("http://localhost:5000/private", {
+      const apiResponse = await axios.get("http://localhost:3001/private", {
         headers: { Authorization: `${token_type} ${access_token}` },
       });
       data = apiResponse.data;
