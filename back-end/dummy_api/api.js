@@ -5,7 +5,7 @@ const app = express();
 const { auth } = require("express-oauth2-jwt-bearer");
 
 const jwtCheck = auth({
-  audience: "http://localhost:3001",
+  audience: process.env.AUDIENCE,
   issuerBaseURL: "https://dev-ezr2jpqdbryydw6b.us.auth0.com/",
   tokenSigningAlg: "RS256",
 });
