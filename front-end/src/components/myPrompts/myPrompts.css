@@ -82,3 +82,22 @@ height: 40px;
     width: 90px;
     height: 40px;
 }
+
+.btnCreate{
+    position: absolute;
+    top: 10px;
+    left: 710px;
+    background: #414141;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 5px;
+    width: 90px;
+    height: 40px;
+}

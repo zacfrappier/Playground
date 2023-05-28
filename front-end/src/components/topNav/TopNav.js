@@ -14,20 +14,17 @@ function TopNav() {
   const [main, setMain] = useState({
     center: <Welcome />,
   });
-  
+
   useEffect(() => {
     service.getAllPrompts();
-  })
+  });
 
   const { user, isAuthenticated, isLoading, getAccessTokenSilently } = useAuth0();
 
-  console.log(user);
-  console.log(getAccessTokenSilently());
-
-  const {userInfo, setUserInfo}= useState("email");
+  const { userInfo, setUserInfo } = useState("email");
 
   const handleStateChange = (newValue) => {
-    console.log("log in button info : ", newValue)
+    console.log("log in button info : ", newValue);
     setUserInfo(newValue);
   };
 
@@ -66,13 +63,20 @@ function TopNav() {
     console.log("my prompts clicked");
     setMain((prevState) => ({
       ...prevState,
-      center: <MyPrompts />,
+      center: <MyPrompts onChange={myPromptChange} />,
     }));
   };
 
   const createPromptClicked = (e) => {
     console.log("create prompt clicked");
     e.preventDefault();
+    setMain((prevState) => ({
+      ...prevState,
+      center: <CreatePrompt />,
+    }));
+  };
+
+  const myPromptChange = () => {
     setMain((prevState) => ({
       ...prevState,
       center: <CreatePrompt />,
@@ -137,7 +141,7 @@ function TopNav() {
         <button className="btn btnSU h" onClick={signUpClicked}>
           Sign up
         </button>
-        <LoginButton onStateChange={handleStateChange}/>
+        <LoginButton onStateChange={handleStateChange} />
         <LogoutButton />
       </div>
       {main.center}

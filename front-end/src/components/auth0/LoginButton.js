@@ -18,9 +18,6 @@ const handleInputChange = (event) => {
 
   const handleLogin = async () => {
     console.log("login clicked");
-
-
-    //method 1 requires axios
     try {
       const authResult = await loginWithRedirect();
       console.log("login successful");
@@ -31,17 +28,15 @@ const handleInputChange = (event) => {
       console.log("An error occurred during login:", error);
     }
   };
+  
   return (
     !isAuthenticated && (
       <button 
       className="btn btnLI h" 
-      // onClick={() => loginWithRedirect({})} //original login
-      // onClick={handleLogin, handleInputChange}
       onClick={() => {
         handleLogin();
         handleInputChange();
       }}
-      // onChange={handleInputChange}
       >Log In</button>
 
     )
