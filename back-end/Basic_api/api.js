@@ -3,6 +3,7 @@ const app = express();
 // const Jwt = require("express-jwt");
 // const Jwks = require("jwks-rsa");
 const { auth } = require("express-oauth2-jwt-bearer");
+require("dotenv").config();
 
 const jwtCheck = auth({
   audience: process.env.AUDIENCE,
