@@ -20,7 +20,7 @@ const config = {
   clientSecret: process.env.CLIENTSECRET,
   authorizationParams: {
     response_type: "code",
-    audience: "http://localhost:3001",
+    audience: process.env.AUDIENCE,
     scope: "openid Profile email",
   },
 };
